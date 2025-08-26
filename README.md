@@ -2,8 +2,8 @@
 Benchmarking haploid variant identification accuracy of varaint callers.
 This repository contains scripts, sequences and templates, for benchmarking haploid variant affienciency in MinION/GridION Nanopore reads.
 
-##truthset composition
-###Plasmid dataset
+## Truthset composition
+### Plasmid dataset
 This truthset cointains chimeric plasmid mixtures in a controlled truth-set framework.
 
     A 261 bp insert region was selected (positions 2554–2785).
