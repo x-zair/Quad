@@ -1,7 +1,7 @@
 # Truthset analysis - Haploid variant calling in Nanopore data
 Benchmarking haploid variant identification accuracy of varaint callers.
 This repository contains scripts, sequences and templates, for benchmarking haploid variant affienciency in MinION/GridION Nanopore reads.
-Reads located at [Bioproject](https://www.ncbi.nlm.nih.gov/bioproject/1245633)
+Reads located at [Bioproject PRJNA1245633](https://www.ncbi.nlm.nih.gov/bioproject/1245633)
 
 ## Truthset composition
 ### Plasmid dataset
