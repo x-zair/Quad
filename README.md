@@ -38,12 +38,12 @@ Plasmid mixtures were prepared at varying ratios to generate ground-truth comple
 
 ### Bacterial Genomes
 
-Two closely related *E. coli* strains (~95% similarity) were selected for sequencing: **DH5-α** and **STBL3 (HB101)**. Each strain was sequenced on separate flow cells. Additionally, a third flow cell contained a mixture of the two strains at varying ratios.
+Two closely related *E. coli* strains (~95% similarity) were selected for sequencing: **DH5-α** and **STBL3 (HB101)**. Each strain was sequenced on separate flow cells. Additionally, a third flow cell contained a mixture of the two strains at varying ratios:
 
-| Barcode | DH5-α   | STBL3   |
-|---------|---------|---------|
-| 1       | 0.990943| 0.009057|
-| 3       | 0.953478| 0.046522|
-| 4       | 0.906615| 0.093385| 
+| Barcode | DH5-α  | STBL3  |
+|---------|--------|--------|
+| 1       | 0.990  | 0.010  |
+| 3       | 0.950  | 0.050  |
+| 4       | 0.900  | 0.100  |
 
 ## 
