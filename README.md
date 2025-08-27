@@ -66,12 +66,12 @@ R scripts in respective plasmids and genomes folder will extract variant informa
 Sample VCFs as well as expected outputs provided within [samples](/samples) folder. 
 ### Example Workflow for Generating Sample VCFs
 
-    1) Concatenate raw fastq files by barcode.
-    2) Trim adapters using Porechop.
-    3) Filter reads by length and quality (min PHRED score 10, max length 7180) with NanoFilt.
-    4) Align reads to the reference genome using minimap2 in ONT mode.
-    5) Convert, sort, and index SAM files to BAM format using samtools.
-    6) Perform variant calling using LoFreq with multi-threading.
+> 1) Concatenate raw fastq files by barcode.
+> 2) Trim adapters using Porechop.
+> 3)  Filter reads by length and quality (min PHRED score 10, max length 7180) with NanoFilt.
+> 4)  Align reads to the reference genome using minimap2 in ONT mode.
+> 5)  Convert, sort, and index SAM files to BAM format using samtools.
+> 6)  Perform variant calling using LoFreq with multi-threading.
 
 ```bash
 
