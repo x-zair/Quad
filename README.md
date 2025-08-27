@@ -23,7 +23,7 @@ Plasmid mixtures were prepared at varying ratios to generate ground-truth comple
   - 15 out of 85 positions exhibit distinct nucleotides in all three spike plasmids.  
   - For these positions, the variant caller must identify two alternate alleles at the same site, resulting in a doubling of possible mutants at these locations (adding 15 × 2 = 30 mutants).
  
-<img src="/img/alignment.png" alt="alignment" style="width:40%; height:auto;"/>
+![dot_aln](img/dot_aln.png)
 
 List of variants provided at within the [plasmid variant sheet](/plasmids/list_vector.xlsx). Reference fasta's provided in the same folder. 
 
@@ -46,7 +46,7 @@ List of variants provided at within the [plasmid variant sheet](/plasmids/list_v
 
 Two closely related *E. coli* strains (~95% similarity) were selected for sequencing: **DH5-α** and **STBL3 (HB101)**. 
 
-![dot_aln](img/dot_aln.png)
+<img src="img/genome_pair.png" alt="dot" style="width:40%; height:auto;"/>
 
 Each strain was sequenced on separate flow cells. Additionally, a third flow cell contained a mixture of the two strains at varying ratios:
 
