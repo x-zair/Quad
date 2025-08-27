@@ -50,11 +50,11 @@ Two closely related *E. coli* strains (~95% similarity) were selected for sequen
 
 Each strain was sequenced on separate flow cells. Additionally, a third flow cell contained a mixture of the two strains at varying ratios:
 
-| Barcode | DH5-α  | STBL3  |
-|---------|--------|--------|
-| 1       | 0.990  | 0.010  |
-| 3       | 0.950  | 0.050  |
-| 4       | 0.900  | 0.100  |
+| Barcode        | DH5-α  | STBL3  |
+|----------------|--------|--------|
+|Barcode 1       | 0.990  | 0.010  |
+|Barcode 3       | 0.950  | 0.050  |
+|Barcode 4       | 0.900  | 0.100  |
 
 Reference genomes and variant list enclosed in the [genomes](/genomes) folder. Variant list is seperated into subsitutional(list_s), deletional(list_d) and insertional(list_i) variants.   
 
