@@ -92,8 +92,8 @@ lofreq call-parallel \
   --pp-threads [num_threads] -B -f [reference.fasta] -o [barcode]_lf.vcf [barcode].bam
 
 ```
-[!Note]
-Replace all placeholders enclosed in square brackets (e.g., `[barcode]`, `[reference.fasta]`, `[num_threads]`) with the actual values for your samples, reference genome files, and desired thread counts before running the commands.
+> [!Note]
+> Replace all placeholders enclosed in square brackets (e.g., `[barcode]`, `[reference.fasta]`, `[num_threads]`) with the actual values for your samples, reference genome files, and desired thread counts before running the commands.
 
 
 
