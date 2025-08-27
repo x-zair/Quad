@@ -14,9 +14,10 @@ This dataset contains chimeric plasmid mixtures designed within a controlled tru
 - A 261 bp insert region (positions 2554–2785) was selected for modification.  
 - Two chimeric plasmids were created by replacing this insert with sequences from Wild-type and Omicron variants.  
 
+Plasmid mixtures were prepared at varying ratios to simulate ground-truth complexity. Nine mixture sets, along with three clonal plasmids, are available at the [repository](https://www.ncbi.nlm.nih.gov/bioproject/1245633).
+
 <img src="/img/vector.png" alt="plasmid design" style="width:40%; height:auto;"/>
 
-Plasmid mixtures were prepared at varying ratios to simulate ground-truth complexity. Nine mixture sets, along with three clonal plasmids, are available at the [repository](https://www.ncbi.nlm.nih.gov/bioproject/1245633).
 
 **Dataset highlights:**
 
