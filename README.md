@@ -50,4 +50,6 @@ Two closely related *E. coli* strains (~95% similarity) were selected for sequen
 | 3       | 0.950  | 0.050  |
 | 4       | 0.900  | 0.100  |
 
+Reference genomes and variant list enclosed in the [genomes](/genomes) folder. Variant list is seperated into subsitutional(list_s), deletional(list_d) and insertional(list_i) variants.   
+
 ## 
