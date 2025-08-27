@@ -46,7 +46,7 @@ List of variants provided at within the [plasmid variant sheet](/plasmids/list_v
 
 Two closely related *E. coli* strains (~95% similarity) were selected for sequencing: **DH5-α** and **STBL3 (HB101)**. 
 
-[!dotaln](/img/dot_aln.png)
+![dot_aln](img/dot_aln.png)
 
 Each strain was sequenced on separate flow cells. Additionally, a third flow cell contained a mixture of the two strains at varying ratios:
 
