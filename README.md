@@ -1,7 +1,8 @@
-# Truthset analysis - Haploid variant calling in Nanopore data
-Benchmarking haploid variant identification accuracy of varaint callers.
+# Sub-consensus haploid variant identification truthset in Nanopore reads
+This repository provides a curated set of raw Nanopore sequencing reads hosted on NCBI, designed for benchmarking rare variant calling specifically on Nanopore flow cells. The data include a simple, low-complexity chimeric plasmid truth set alongside longer bacterial genomes containing insertions and deletions to simulate real-world challenges.
 
-This repository contains scripts, reference sequences and templates, for benchmarking haploid variant efficiency on MinION/GridION Nanopore reads.
+The plasmid dataset uses carefully mixed variants within short 261 bp inserts for controlled truth set analysis, while the bacterial genome sequences originate from two closely related E. coli strains. This resource enables researchers to evaluate and improve the sensitivity and accuracy of variant callers in Nanopore sequencing workflows, particularly for detecting rare variants.
+This repository contains scripts, reference sequences and templates, for benchmarking haploid variant efficiency on MinION/GridION Nanopore reads (R9.4.1 and R10.4.1).
 Raw reads located at bioproject [PRJNA1245633](https://www.ncbi.nlm.nih.gov/bioproject/1245633)   
 
 ## Truthset Composition
