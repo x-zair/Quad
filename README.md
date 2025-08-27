@@ -83,7 +83,9 @@ samtools sort --threads 50 [barcode].sam > [barcode].bam
 samtools index [barcode].bam
 6. Assess alignment quality with Qualimap
 
-7. Variant calling -LoFreq (parallel, indel quality, multi-core)
+qualimap bamqc -nr 250 -bam [barcode].bam
+7. Variant calling with LoFreq
+
 lofreq call-parallel
 --pp-threads [num_threads]
 -B
