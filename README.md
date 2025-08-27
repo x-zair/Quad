@@ -1,9 +1,8 @@
 # Sub-consensus haploid variant identification truthset in Nanopore reads
-This repository provides a curated set of raw Nanopore sequencing reads hosted on NCBI, designed for benchmarking variant calling tools specifically on Nanopore flow cells. The data include a simple, low-complexity chimeric plasmid truth set alongside longer bacterial genomes containing insertions and deletions to simulate real-world challenges.
+> This repository provides scripts, reference sequences, and templates for benchmarking haploid variant detection accuracy on Nanopore MinION/GridION platforms (R9.4.1 and R10.4.1 flow cells).
+> Raw reads are available at the NCBI bioproject [PRJNA1245633](https://www.ncbi.nlm.nih.gov/bioproject/1245633). 
 
-The plasmid dataset uses carefully mixed variants within short 261 bp inserts for controlled truth set analysis, while the bacterial genome sequences originate from two closely related E. coli strains. This resource enables researchers to evaluate and improve the sensitivity and accuracy of variant callers in Nanopore sequencing workflows, particularly for detecting rare variants.
-This repository contains scripts, reference sequences and templates, for benchmarking haploid variant efficiency on MinION/GridION Nanopore reads (R9.4.1 and R10.4.1).
-Raw reads located at bioproject [PRJNA1245633](https://www.ncbi.nlm.nih.gov/bioproject/1245633)   
+The dataset includes a simple, low-complexity chimeric plasmid truth set designed with short 261 bp inserts, and longer bacterial genome sequences from two closely related *E. coli* strains (∼95% similarity) that contain insertion and deletion variants. This resource allows researchers to benchmark rare variant calling performance specifically on Nanopore sequencing data, reflecting both controlled and complex genomic scenarios.
 
 ## Truthset Composition
 
@@ -64,7 +63,7 @@ Each strain was sequenced on separate flow cells. Additionally, a third flow cel
 |Barcode 3       | 0.950  | 0.050  |
 |Barcode 4       | 0.900  | 0.100  |
 
-Reference genomes and variant list enclosed in the [genomes](/genomes) folder. Variant list is seperated into subsitutional(list_s), deletional(list_d) and insertional(list_i) variants.   
+Reference genomes and variant list enclosed in the [genomes](/genomes) folder. Variant list is seperated into subsitutional(list_s), deletional(list_d) and insertional(list_i) variants. Clonal genomes of both strains, and the mixes are available at the [repository](https://www.ncbi.nlm.nih.gov/bioproject/1245633).
 
 ## Codes and VCF extraction 
 R scripts in respective plasmids and genomes folder will extract variant information from variant files and summarise true positives, false positives, and false negatives based on provided variant lists. Scripts within genome folder will further segregate variants into subsiutial, deletional and insertional variants. 
