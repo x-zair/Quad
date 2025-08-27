@@ -65,35 +65,32 @@ R scripts in respective plasmids and genomes folder will extract variant informa
 
 Sample VCFs as well as expected outputs provided within [samples](/samples) folder. 
 ### Example Workflow for Generating Sample VCFs
+
+    1) Concatenate raw fastq files by barcode.
+    2) Trim adapters using Porechop.
+    3) Filter reads by length and quality (min PHRED score 10, max length 7180) with NanoFilt.
+    4) Align reads to the reference genome using minimap2 in ONT mode.
+    5) Convert, sort, and index SAM files to BAM format using samtools.
+    6) Perform variant calling using LoFreq with multi-threading.
+
 ```bash
 
-1. Concatenate raw fastq files by barcode
-
 cat *.fastq > [barcode].fastq
-2. Trim adapters using Porechop
 
 porechop -i [barcode].fastq -o trim_[barcode].fastq
-3. Filter reads by length and quality (min PHRED 10, max length 7180) with NanoFilt
 
 NanoFilt -q 10 --maxlength 7180 trim_[barcode].fastq > filt_trim_[barcode].fastq
-4. Align reads to the reference genome with minimap2 (ONT mode)
 
 minimap2 -ax map-ont [reference.fasta] filt_trim_[barcode].fastq > [barcode].sam
-5. Convert and sort SAM to BAM, then index using samtools
 
 samtools sort --threads 50 [barcode].sam > [barcode].bam
 samtools index [barcode].bam
-6. Assess alignment quality with Qualimap
 
 qualimap bamqc -nr 250 -bam [barcode].bam
-7. Variant calling with LoFreq
 
-lofreq call-parallel
---pp-threads [num_threads]
--B
--f [reference.fasta]
--o [barcode]_lf.vcf
-[barcode].bam
+lofreq call-parallel \
+  --pp-threads [num_threads] -B -f [reference.fasta] -o [barcode]_lf.vcf [barcode].bam
+
 ```
 
 
