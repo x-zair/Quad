@@ -1,7 +1,7 @@
 # Truthset analysis - Haploid variant calling in Nanopore data
 Benchmarking haploid variant identification accuracy of varaint callers.
 
-This repository contains scripts, reference sequences and templates, for benchmarking haploid variant affienciency in MinION/GridION Nanopore reads.
+This repository contains scripts, reference sequences and templates, for benchmarking haploid variant efficiency on MinION/GridION Nanopore reads.
 Raw reads located at bioproject [PRJNA1245633](https://www.ncbi.nlm.nih.gov/bioproject/1245633)   
 
 ## Truthset composition
@@ -79,7 +79,7 @@ cat *.fastq > [barcode].fastq
 
 porechop -i [barcode].fastq -o trim_[barcode].fastq
 
-NanoFilt -q 10 --maxlength 7180 trim_[barcode].fastq > filt_trim_[barcode].fastq
+NanoFilt -q 10 --maxlength [length] trim_[barcode].fastq > filt_trim_[barcode].fastq
 
 minimap2 -ax map-ont [reference.fasta] filt_trim_[barcode].fastq > [barcode].sam
 
