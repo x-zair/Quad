@@ -65,6 +65,8 @@ R scripts in respective plasmids and genomes folder will extract variant informa
 
 Sample VCFs as well as expected outputs provided within [samples](/samples) folder. 
 ### Example Workflow for Generating Sample VCFs
+```bash
+
 1. Concatenate raw fastq files by barcode
 
 cat *.fastq > [barcode].fastq
@@ -92,6 +94,7 @@ lofreq call-parallel
 -f [reference.fasta]
 -o [barcode]_lf.vcf
 [barcode].bam
+```
 
 
 
